@@ -14,6 +14,8 @@ Plugin 'VundleVim/Vundle.vim'
 " Keep Plugin commands between vundle#begin/end.
 " plugin on GitHub repo
 "Plugin 'tpope/vim-fugitive'
+Plugin 'bling/vim-airline'
+Plugin 'kien/ctrlp.vim'
 " plugin from http://vim-scripts.org/vim/scripts.html
 "Plugin 'L9'
 " Git plugin not hosted on GitHub
@@ -34,8 +36,7 @@ filetype plugin indent on    " required
 "
 " Brief help
 " :PluginList       - lists configured plugins
-" :PluginInstall    - installs plugins; append `!` to update or just
-:PluginUpdate
+" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
 " :PluginSearch foo - searches for foo; append `!` to refresh local cache
 " :PluginClean      - confirms removal of unused plugins; append `!` to
 " auto-approve removal
@@ -184,13 +185,13 @@ if executable('ag')
 endif
 
 " Airline
-"let g:airline_powerline_fonts = 1
-"if !exists('g:airline_symbols')
-"    let g:airline_symbols = {}
-"endif
-"let g:airline_symbols.space = "\ua0"
-"let g:airline_theme='solarized'
-"set t_Co=256
+let g:airline_powerline_fonts = 1
+if !exists('g:airline_symbols')
+    let g:airline_symbols = {}
+endif
+let g:airline_symbols.space = "\ua0"
+let g:airline_theme='luna'
+set t_Co=256
 
 :set smartcase
 :set ignorecase
@@ -198,7 +199,7 @@ endif
 
 " Color scheme
 "colorscheme solarized
-"set background=dark
+" set background=dark
 set encoding=utf-8
 
 " Highlight line number of where cursor currently is
