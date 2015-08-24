@@ -51,12 +51,10 @@ filetype plugin indent on    " required
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
-
 let g:syntastic_always_populate_loc_list = 1
 "let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
-
+let g:syntastic_check_on_wq = 1
 
 
 set shell=/bin/bash
@@ -106,7 +104,7 @@ map <F6> :NERDTreeFind<CR>
 " highlight vertical column of cursor
 au WinLeave * set nocursorline nocursorcolumn
 au WinEnter * set cursorline
-set cursorline
+" set cursorline
 
 "key to insert mode with paste using F2 key
 map <F2> :set paste<CR>i
