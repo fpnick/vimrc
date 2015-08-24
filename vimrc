@@ -16,6 +16,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'bling/vim-airline'
 Plugin 'kien/ctrlp.vim'
+Plugin 'scrooloose/syntastic'
 Plugin 'scrooloose/nerdtree'
 " plugin from http://vim-scripts.org/vim/scripts.html
 "Plugin 'L9'
@@ -44,6 +45,19 @@ filetype plugin indent on    " required
 "
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
+
+" PLUGIN SETTINGS
+" Syntastic
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+"let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
+
 
 set shell=/bin/bash
 "execute pathogen#infect()
@@ -123,6 +137,7 @@ let g:fuzzy_ignore = "*.png;*.PNG;*.JPG;*.jpg;*.GIF;*.gif;vendor/**;coverage/**;
 
 " Switch syntax highlighting on, when the terminal has colors
 " Also switch on highlighting the last used search pattern.
+let fortran_free_source=1
 if (&t_Co > 2 || has("gui_running")) && !exists("syntax_on")
   syntax on
 endif
