@@ -298,9 +298,12 @@ nnoremap ; :
 " remap due to dvorak
 """""""""""""""""""""
 " Navigation
-nnoremap e h
-nnoremap u j
-nnoremap h k
-nnoremap t l
+nnoremap h h
+nnoremap t j
+nnoremap n k
+nnoremap s l
 " Undo
 nnoremap - u
+" Find next and previous
+nnoremap e n
+nnoremap E N
