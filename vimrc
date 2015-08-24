@@ -13,7 +13,6 @@ Plugin 'VundleVim/Vundle.vim'
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
 " plugin on GitHub repo
-Plugin 'tpope/vim-fugitive'
 Plugin 'bling/vim-airline'
 Plugin 'kien/ctrlp.vim'
 Plugin 'scrooloose/syntastic'
@@ -222,6 +221,7 @@ set encoding=utf-8
 hi CursorLineNr guifg=#050505
 
 " Numbers
+set relativenumber
 set number
 set numberwidth=5
 
