@@ -132,7 +132,7 @@ set encoding=utf-8
 hi CursorLineNr guifg=#050505
 
 " Numbers
-set relativenumber
+"set relativenumber
 set number
 set numberwidth=5
 
@@ -155,3 +155,5 @@ nnoremap - u
 " Find next and previous
 nnoremap e n
 nnoremap E N
+nnoremap z e
+nnoremap Z E
