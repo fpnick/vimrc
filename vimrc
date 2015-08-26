@@ -19,6 +19,8 @@ Plugin 'scrooloose/syntastic'
 Plugin 'scrooloose/nerdtree'
 Plugin 'rking/ag.vim'
 Plugin 'tpope/vim-fugitive'
+Plugin 'sjl/gundo.vim'
+Plugin 'airblade/vim-gitgutter'
 " plugin from http://vim-scripts.org/vim/scripts.html
 "Plugin 'L9'
 " Git plugin not hosted on GitHub
@@ -89,7 +91,7 @@ set wildmenu      " Show Vim command completion
 " Also switch on highlighting the last used search pattern.
 let fortran_free_source=1
 if (&t_Co > 2 || has("gui_running")) && !exists("syntax_on")
-  syntax on
+   syntax on
 endif
 
 " bind K to search word under cursor
@@ -145,6 +147,9 @@ set splitright
 
 nnoremap ; :
 
+" like sublime multicursor
+vnoremap . :normal .<cr>
+
 """""""""""""""""""""
 " remap due to dvorak
 """""""""""""""""""""
@@ -164,3 +169,9 @@ nnoremap Z E
 nnoremap - z
 " make ^ more easily accessible
 nnoremap @ ^
+" Move window relative to cursor
+nnoremap -t zt
+nnoremap -- zz
+nnoremap -b zb
+" Use Gundo
+nnoremap <F7> :GundoToggle<CR>
