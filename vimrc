@@ -81,6 +81,8 @@ set showcmd       " display incomplete commands
 set incsearch     " do incremental searching
 set hlsearch      " highlight matches
 set laststatus=2  " Always display the status line
+set foldmethod=indent " fold based on indentation
+set foldlevel=100     " unfold 100 levels on startup
 
 " Switch syntax highlighting on, when the terminal has colors
 " Also switch on highlighting the last used search pattern.
@@ -157,3 +159,7 @@ nnoremap e n
 nnoremap E N
 nnoremap z e
 nnoremap Z E
+" rebind z for folding
+nnoremap - z
+" make ^ more easily accessible
+nnoremap @ ^
