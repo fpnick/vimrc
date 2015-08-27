@@ -146,6 +146,11 @@ nnoremap ; :
 " like sublime multicursor
 vnoremap . :normal .<cr>
 
+" Prevent vi from inserting newline after 80 columns
+set wrap
+set linebreak
+set nolist  " list disables linebreak
+
 """""""""""""""""""""
 " remap due to dvorak
 """""""""""""""""""""
