@@ -86,6 +86,7 @@ set laststatus=2  " Always display the status line
 set foldmethod=indent " fold based on indentation
 set foldlevel=100     " unfold 100 levels on startup
 set wildmenu      " Show Vim command completion
+set relativenumber
 
 " Switch syntax highlighting on, when the terminal has colors
 " Also switch on highlighting the last used search pattern.
@@ -135,11 +136,6 @@ set encoding=utf-8
 
 " Highlight line number of where cursor currently is
 hi CursorLineNr guifg=#050505
-
-" Numbers
-"set relativenumber
-set number
-set numberwidth=5
 
 " Open new split panes to right and bottom, which feels more natural
 set splitbelow
