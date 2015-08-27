@@ -87,6 +87,7 @@ set foldmethod=indent " fold based on indentation
 set foldlevel=100     " unfold 100 levels on startup
 set wildmenu      " Show Vim command completion
 set relativenumber
+set colorcolumn=80
 
 " Switch syntax highlighting on, when the terminal has colors
 " Also switch on highlighting the last used search pattern.
