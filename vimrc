@@ -144,8 +144,6 @@ hi CursorLineNr guifg=#050505
 set splitbelow
 set splitright
 
-nnoremap ; :
-
 " like sublime multicursor
 vnoremap . :normal .<cr>
 
