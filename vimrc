@@ -21,6 +21,8 @@ Plugin 'rking/ag.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'sjl/gundo.vim'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'tpope/commentary.vim'
+Plugin 'vim-scripts/ReplaceWithRegister'
 " plugin from http://vim-scripts.org/vim/scripts.html
 "Plugin 'L9'
 " Git plugin not hosted on GitHub
