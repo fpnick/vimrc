@@ -23,6 +23,7 @@ Plugin 'sjl/gundo.vim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'tpope/vim-commentary'
 Plugin 'vim-scripts/ReplaceWithRegister'
+Plugin 'vimwiki/vimwiki'
 "Plugin 'kien/rainbow_parantheses'
 " plugin from http://vim-scripts.org/vim/scripts.html
 "Plugin 'L9'
