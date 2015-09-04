@@ -64,6 +64,9 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 1
 
+" Calendar
+let g:calendar_google_calendar = 1
+
 " Leader Mappings
 map <Space> <leader>
 map <Leader>w :update<CR>
