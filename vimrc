@@ -162,16 +162,14 @@ set wrap
 set linebreak
 set nolist  " list disables linebreak
 
-"""""""""""""""""""""
-" remap due to dvorak
-"""""""""""""""""""""
+"" Remaps
 " Navigation
 nnoremap h h
 nnoremap t j
 nnoremap n k
 nnoremap s l
 " Undo
-nnoremap - u
+"nnoremap - u
 " Find next and previous
 nnoremap e n
 nnoremap E N
@@ -188,3 +186,5 @@ nnoremap -- zz
 nnoremap -b zb
 " Use Gundo
 nnoremap <F7> :GundoToggle<CR>
+" Window navigation
+map <C-S> <C-W>l
