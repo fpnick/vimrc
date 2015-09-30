@@ -26,6 +26,7 @@ Plugin 'vim-scripts/ReplaceWithRegister'
 Plugin 'vimwiki/vimwiki'
 Plugin 'itchyny/calendar.vim'
 Plugin 'fpnick/flowhighlight'
+Plugin 'majutsushi/tagbar'
 "Plugin 'kien/rainbow_parantheses'
 " plugin from http://vim-scripts.org/vim/scripts.html
 "Plugin 'L9'
@@ -77,6 +78,7 @@ map <Leader>q :qall<CR>
 map <F5> :NERDTreeToggle<CR>
 " Current file in nerdtree
 map <F6> :NERDTreeFind<CR>
+nmap <F8> :TagbarToggle<CR>
 
 " Command aliases
 cabbrev tp tabprev
