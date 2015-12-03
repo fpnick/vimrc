@@ -104,7 +104,9 @@ set relativenumber
 set number
 set colorcolumn=80
 set ts=3
-colorscheme skittles_berry
+set background=light
+colorscheme PaperColor
+let g:airline_theme='PaperColor'
 
 " Switch syntax highlighting on, when the terminal has colors
 " Also switch on highlighting the last used search pattern.
