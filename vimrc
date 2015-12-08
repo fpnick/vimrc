@@ -28,6 +28,7 @@ Plugin 'itchyny/calendar.vim'
 Plugin 'fpnick/flowhighlight'
 Plugin 'majutsushi/tagbar'
 Plugin 'LaTeX-Box-Team/LaTeX-Box'
+Plugin 'jreybert/vimagit'
 "Plugin 'kien/rainbow_parantheses'
 " plugin from http://vim-scripts.org/vim/scripts.html
 "Plugin 'L9'
