@@ -194,5 +194,5 @@ nnoremap -- zz
 nnoremap -b zb
 " Use Gundo
 nnoremap <F7> :GundoToggle<CR>
-" Window navigation
-map <C-S> <C-W>l
+" Save with Shift+s
+nnoremap S :w<CR>
