@@ -196,3 +196,5 @@ nnoremap -b zb
 nnoremap <F7> :GundoToggle<CR>
 " Save with Shift+s
 nnoremap S :w<CR>
+" Quit with Shift+-
+nnoremap _ :q<CR>
