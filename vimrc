@@ -25,7 +25,7 @@ Plugin 'tpope/vim-commentary'
 Plugin 'vim-scripts/ReplaceWithRegister'
 Plugin 'vimwiki/vimwiki'
 Plugin 'itchyny/calendar.vim'
-Plugin 'fpnick/flowhighlight'
+"Plugin 'fpnick/flowhighlight'
 Plugin 'majutsushi/tagbar'
 "Plugin 'kien/rainbow_parantheses'
 " plugin from http://vim-scripts.org/vim/scripts.html
