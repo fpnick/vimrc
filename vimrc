@@ -25,7 +25,7 @@ Plugin 'tpope/vim-commentary'
 Plugin 'vim-scripts/ReplaceWithRegister'
 Plugin 'vimwiki/vimwiki'
 Plugin 'itchyny/calendar.vim'
-Plugin 'fpnick/flowhighlight'
+"Plugin 'fpnick/flowhighlight'
 Plugin 'majutsushi/tagbar'
 Plugin 'LaTeX-Box-Team/LaTeX-Box'
 Plugin 'jreybert/vimagit'
@@ -69,7 +69,7 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 0
 let g:syntastic_fortran_compiler = 'ifort'
-let g:syntastic_quiet_messages = { "regex": 'Recommended relationship\|preprocessor line' }
+let g:syntastic_quiet_messages = { "regex": 'Recommended relationship\|preprocessor line\|opening the compiled module file' }
 
 " Calendar
 let g:calendar_google_calendar = 1
