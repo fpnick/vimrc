@@ -27,6 +27,8 @@ Plugin 'vimwiki/vimwiki'
 Plugin 'itchyny/calendar.vim'
 "Plugin 'fpnick/flowhighlight'
 Plugin 'majutsushi/tagbar'
+Plugin 'LaTeX-Box-Team/LaTeX-Box'
+Plugin 'jreybert/vimagit'
 "Plugin 'kien/rainbow_parantheses'
 " plugin from http://vim-scripts.org/vim/scripts.html
 "Plugin 'L9'
@@ -62,9 +64,11 @@ set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 let g:syntastic_always_populate_loc_list = 1
-"let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 0
+let g:syntastic_check_on_wq = 0
+let g:syntastic_fortran_compiler = 'ifort'
+let g:syntastic_quiet_messages = { "regex": 'Recommended relationship\|preprocessor line\|opening the compiled module file' }
 
 " Calendar
 let g:calendar_google_calendar = 1
@@ -101,7 +105,9 @@ set relativenumber
 set number
 set colorcolumn=80
 set ts=3
-colorscheme skittles_berry
+set background=light
+colorscheme PaperColor
+let g:airline_theme='PaperColor'
 
 " Switch syntax highlighting on, when the terminal has colors
 " Also switch on highlighting the last used search pattern.
@@ -164,16 +170,14 @@ set wrap
 set linebreak
 set nolist  " list disables linebreak
 
-"""""""""""""""""""""
-" remap due to dvorak
-"""""""""""""""""""""
+"" Remaps
 " Navigation
 nnoremap h h
 nnoremap t j
 nnoremap n k
 nnoremap s l
 " Undo
-nnoremap - u
+"nnoremap - u
 " Find next and previous
 nnoremap e n
 nnoremap E N
@@ -190,3 +194,7 @@ nnoremap -- zz
 nnoremap -b zb
 " Use Gundo
 nnoremap <F7> :GundoToggle<CR>
+" Save with Shift+s
+nnoremap S :w<CR>
+" Quit with Shift+-
+nnoremap _ :q<CR>
