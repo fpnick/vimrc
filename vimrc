@@ -120,8 +120,8 @@ endif
 " bind K to search word under cursor
 nnoremap K :Ag "\b<C-R><C-W>\b"<CR>:cw<CR>
 
-" Softtabs, 2 spaces
-set tabstop=2
+" Softtabs, 3 spaces
+set tabstop=3
 set shiftwidth=3
 set expandtab
 
