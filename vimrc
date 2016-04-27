@@ -110,8 +110,8 @@ set number
 set colorcolumn=80
 set ts=3
 set background=light
-colorscheme elflord
-let g:airline_theme='elflord'
+colorscheme delek
+let g:airline_theme='delek'
 
 " Switch syntax highlighting on, when the terminal has colors
 " Also switch on highlighting the last used search pattern.
