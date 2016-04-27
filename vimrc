@@ -69,7 +69,10 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 0
 let g:syntastic_fortran_compiler = 'ifort'
-let g:syntastic_quiet_messages = { "regex": 'Recommended relationship\|preprocessor line\|opening the compiled module file' }
+let g:syntastic_quiet_messages = { "regex": 'invalid preprocessing directive #hdr\|invalid preprocessing directive #end\|invalid preprocessing directive #src\|Recommended relationship\|preprocessor line\|opening the compiled module file' }
+
+" Vimagit
+autocmd User VimagitEnterCommit startinsert
 
 " Calendar
 let g:calendar_google_calendar = 1
@@ -107,8 +110,8 @@ set number
 set colorcolumn=80
 set ts=3
 set background=light
-colorscheme PaperColor
-let g:airline_theme='PaperColor'
+colorscheme darkblue
+let g:airline_theme='darkblue'
 
 " Switch syntax highlighting on, when the terminal has colors
 " Also switch on highlighting the last used search pattern.
@@ -199,3 +202,6 @@ nnoremap <F7> :GundoToggle<CR>
 nnoremap S :w<CR>
 " Quit with Shift+-
 nnoremap _ :q<CR>
+
+
+autocmd Filetype python setlocal ts=4 sts=4 sw=4
