@@ -131,6 +131,9 @@ set tabstop=3
 set shiftwidth=3
 set expandtab
 
+" Textwidth
+set tw=80
+
 " Display extra whitespace
 set list listchars=tab:»·,trail:·
 
