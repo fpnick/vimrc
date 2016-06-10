@@ -111,7 +111,8 @@ set number
 set colorcolumn=80
 set ts=3
 set background=light
-colorscheme delek
+" colorscheme delek
+colorscheme fahrenheit
 let g:airline_theme='delek'
 
 " Switch syntax highlighting on, when the terminal has colors
