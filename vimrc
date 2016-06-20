@@ -30,6 +30,7 @@ Plugin 'majutsushi/tagbar'
 Plugin 'LaTeX-Box-Team/LaTeX-Box'
 Plugin 'jreybert/vimagit'
 Plugin 'NLKNguyen/papercolor-theme'
+Plugin 'sickill/vim-monokai'
 "Plugin 'kien/rainbow_parantheses'
 " plugin from http://vim-scripts.org/vim/scripts.html
 "Plugin 'L9'
@@ -69,7 +70,7 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 0
 let g:syntastic_fortran_compiler = 'ifort'
-let g:syntastic_quiet_messages = { "regex": 'Recommended relationship\|preprocessor line\|opening the compiled module file' }
+let g:syntastic_quiet_messages = { "regex": 'Recommended relationship\|preprocessor line\|opening the compiled module file\|#src\|#end' }
 
 " Calendar
 let g:calendar_google_calendar = 1
