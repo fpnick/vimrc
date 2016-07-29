@@ -61,6 +61,9 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
+scriptencoding utf-8
+set encoding=utf-8
+
 " PLUGIN SETTINGS
 " Syntastic
 set statusline+=%#warningmsg#
@@ -136,7 +139,7 @@ set expandtab
 set tw=80
 
 " Display extra whitespace
-" set list listchars=tab:»·,trail:·
+set list listchars=tab:»·,trail:·
 
 " Use The Silver Searcher https://github.com/ggreer/the_silver_searcher
 if executable('ag')
