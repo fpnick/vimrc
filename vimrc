@@ -114,6 +114,7 @@ set ts=3
 set background=light
 " colorscheme delek
 colorscheme fahrenheit
+colorscheme default
 let g:airline_theme='delek'
 
 " Switch syntax highlighting on, when the terminal has colors
@@ -135,7 +136,7 @@ set expandtab
 set tw=80
 
 " Display extra whitespace
-set list listchars=tab:»·,trail:·
+" set list listchars=tab:»·,trail:·
 
 " Use The Silver Searcher https://github.com/ggreer/the_silver_searcher
 if executable('ag')
