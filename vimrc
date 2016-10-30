@@ -30,7 +30,8 @@ Plugin 'majutsushi/tagbar'
 Plugin 'LaTeX-Box-Team/LaTeX-Box'
 Plugin 'jreybert/vimagit'
 Plugin 'NLKNguyen/papercolor-theme'
-Plugin 'sickill/vim-monokai'
+Plugin 'fcpg/vim-fahrenheit'
+Plugin 'Valloric/YouCompleteMe'
 "Plugin 'kien/rainbow_parantheses'
 " plugin from http://vim-scripts.org/vim/scripts.html
 "Plugin 'L9'
@@ -70,7 +71,10 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 0
 let g:syntastic_fortran_compiler = 'ifort'
-let g:syntastic_quiet_messages = { "regex": 'Recommended relationship\|preprocessor line\|opening the compiled module file\|#src\|#end' }
+let g:syntastic_quiet_messages = { "regex": 'invalid preprocessing directive #hdr\|invalid preprocessing directive #end\|invalid preprocessing directive #src\|Recommended relationship\|preprocessor line\|opening the compiled module file' }
+
+" Vimagit
+autocmd User VimagitEnterCommit startinsert
 
 " Calendar
 let g:calendar_google_calendar = 1
@@ -108,8 +112,9 @@ set number
 set colorcolumn=80
 set ts=3
 set background=light
-colorscheme PaperColor
-let g:airline_theme='PaperColor'
+" colorscheme delek
+colorscheme fahrenheit
+let g:airline_theme='delek'
 
 " Switch syntax highlighting on, when the terminal has colors
 " Also switch on highlighting the last used search pattern.
@@ -121,10 +126,13 @@ endif
 " bind K to search word under cursor
 nnoremap K :Ag "\b<C-R><C-W>\b"<CR>:cw<CR>
 
-" Softtabs, 2 spaces
-set tabstop=2
+" Softtabs, 3 spaces
+set tabstop=3
 set shiftwidth=3
 set expandtab
+
+" Textwidth
+set tw=80
 
 " Display extra whitespace
 set list listchars=tab:»·,trail:·
@@ -200,3 +208,6 @@ nnoremap <F7> :GundoToggle<CR>
 nnoremap S :w<CR>
 " Quit with Shift+-
 nnoremap _ :q<CR>
+
+
+autocmd Filetype python setlocal ts=4 sts=4 sw=4
