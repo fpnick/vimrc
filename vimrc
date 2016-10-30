@@ -61,6 +61,9 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
+scriptencoding utf-8
+set encoding=utf-8
+
 " PLUGIN SETTINGS
 " Syntastic
 set statusline+=%#warningmsg#
@@ -114,6 +117,7 @@ set ts=3
 set background=light
 " colorscheme delek
 colorscheme fahrenheit
+colorscheme default
 let g:airline_theme='delek'
 
 " Switch syntax highlighting on, when the terminal has colors
