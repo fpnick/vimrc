@@ -74,7 +74,7 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 0
 let g:syntastic_fortran_compiler = 'ifort'
-let g:syntastic_quiet_messages = { "regex": 'invalid preprocessing directive #hdr\|invalid preprocessing directive #end\|invalid preprocessing directive #src\|Recommended relationship\|preprocessor line\|opening the compiled module file' }
+let g:syntastic_quiet_messages = { "regex": 'invalid preprocessing directive #hdr\|invalid preprocessing directive #end\|invalid preprocessing directive #src\|Recommended relationship\|preprocessor line\|opening the compiled module file\|Name in only-list does not exist.   [MAX_NUMBER_OF_CONTEXTS]\|Name in only-list does not exist.   [ICONTEXT]\|A specification expression is invalid.   [MAX_NUMBER_OF_CONTEXTS]' }
 
 " Vimagit
 autocmd User VimagitEnterCommit startinsert
