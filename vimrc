@@ -32,6 +32,11 @@ Plugin 'jreybert/vimagit'
 Plugin 'NLKNguyen/papercolor-theme'
 Plugin 'fcpg/vim-fahrenheit'
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'MarcWeber/vim-addon-mw-utils'
+Plugin 'tomtom/tlib_vim'
+Plugin 'garbas/vim-snipmate'
+Plugin 'honza/vim-snippets'
+
 "Plugin 'kien/rainbow_parantheses'
 " plugin from http://vim-scripts.org/vim/scripts.html
 "Plugin 'L9'
@@ -215,3 +220,8 @@ nnoremap _ :q<CR>
 
 
 autocmd Filetype python setlocal ts=4 sts=4 sw=4
+
+
+"SnipMate
+imap <C-g> <Plug>snipMateNextOrTrigger
+smap <C-g> <Plug>snipMateNextOrTrigger
