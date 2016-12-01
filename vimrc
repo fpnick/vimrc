@@ -32,9 +32,7 @@ Plugin 'jreybert/vimagit'
 Plugin 'NLKNguyen/papercolor-theme'
 Plugin 'fcpg/vim-fahrenheit'
 Plugin 'Valloric/YouCompleteMe'
-Plugin 'MarcWeber/vim-addon-mw-utils'
-Plugin 'tomtom/tlib_vim'
-Plugin 'garbas/vim-snipmate'
+Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
 
 "Plugin 'kien/rainbow_parantheses'
@@ -222,6 +220,8 @@ nnoremap _ :q<CR>
 autocmd Filetype python setlocal ts=4 sts=4 sw=4
 
 
-"SnipMate
-imap <C-g> <Plug>snipMateNextOrTrigger
-smap <C-g> <Plug>snipMateNextOrTrigger
+"UltiSnips
+let g:UltiSnipsExpandTrigger="<c-c>"
+let g:UltiSnipsJumpForwardTrigger="<c-g>"
+let g:UltiSnipsJumpBackwardTrigger="<c-/>"
+let g:snips_author="Fabian Nick"
