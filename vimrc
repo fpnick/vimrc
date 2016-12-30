@@ -1,3 +1,6 @@
+" .vimrc by Fabian Nick
+" Based on the Dvorak Programmer keyboard layout!
+
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
