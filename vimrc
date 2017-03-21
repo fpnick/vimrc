@@ -124,7 +124,7 @@ set background=light
 " colorscheme delek
 colorscheme fahrenheit
 colorscheme default
-let g:airline_theme='delek'
+" let g:airline_theme='delek'
 
 " Switch syntax highlighting on, when the terminal has colors
 " Also switch on highlighting the last used search pattern.
@@ -228,3 +228,6 @@ let g:UltiSnipsExpandTrigger="<c-c>"
 let g:UltiSnipsJumpForwardTrigger="<c-g>"
 let g:UltiSnipsJumpBackwardTrigger="<c-/>"
 let g:snips_author="Fabian Nick"
+
+"Latex-Box settings
+let g:LatexBox_viewer="okular"
