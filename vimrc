@@ -18,7 +18,7 @@ Plugin 'VundleVim/Vundle.vim'
 " plugin on GitHub repo
 Plugin 'bling/vim-airline'
 Plugin 'kien/ctrlp.vim'
-Plugin 'scrooloose/syntastic'
+"Plugin 'scrooloose/syntastic'
 Plugin 'scrooloose/nerdtree'
 Plugin 'rking/ag.vim'
 Plugin 'tpope/vim-fugitive'
@@ -37,6 +37,7 @@ Plugin 'fcpg/vim-fahrenheit'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
+Plugin 'frioux/vim-lost'
 
 "Plugin 'kien/rainbow_parantheses'
 " plugin from http://vim-scripts.org/vim/scripts.html
@@ -77,10 +78,10 @@ set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 0
+let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_fortran_compiler = 'ifort'
-let g:syntastic_quiet_messages = { "regex": 'invalid preprocessing directive #hdr\|invalid preprocessing directive #end\|invalid preprocessing directive #src\|Recommended relationship\|preprocessor line\|opening the compiled module file\|Name in only-list does not exist.   [MAX_NUMBER_OF_CONTEXTS]\|Name in only-list does not exist.   [ICONTEXT]\|A specification expression is invalid.   [MAX_NUMBER_OF_CONTEXTS]' }
+let g:syntastic_quiet_messages = { "regex": 'invalid preprocessing directive #hdr\|invalid preprocessing directive #end\|invalid preprocessing directive #src\|Recommended relationship\|preprocessor line\|opening the compiled module file\|Name in only-list does not exist.   [MAX_NUMBER_OF_CONTEXTS]\|Name in only-list does not exist.   [ICONTEXT]' }
 
 " Vimagit
 autocmd User VimagitEnterCommit startinsert
