@@ -1,3 +1,6 @@
+" .vimrc by Fabian Nick
+" Based on the Dvorak Programmer keyboard layout!
+
 set nocompatible              " be iMproved, required
 filetype off                  " required
 
@@ -15,7 +18,7 @@ Plugin 'VundleVim/Vundle.vim'
 " plugin on GitHub repo
 Plugin 'bling/vim-airline'
 Plugin 'kien/ctrlp.vim'
-Plugin 'scrooloose/syntastic'
+"Plugin 'scrooloose/syntastic'
 Plugin 'scrooloose/nerdtree'
 Plugin 'rking/ag.vim'
 Plugin 'tpope/vim-fugitive'
@@ -32,6 +35,10 @@ Plugin 'jreybert/vimagit'
 Plugin 'NLKNguyen/papercolor-theme'
 Plugin 'fcpg/vim-fahrenheit'
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'SirVer/ultisnips'
+Plugin 'honza/vim-snippets'
+Plugin 'frioux/vim-lost'
+
 "Plugin 'kien/rainbow_parantheses'
 " plugin from http://vim-scripts.org/vim/scripts.html
 "Plugin 'L9'
@@ -71,10 +78,10 @@ set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 0
+let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_fortran_compiler = 'ifort'
-let g:syntastic_quiet_messages = { "regex": 'invalid preprocessing directive #hdr\|invalid preprocessing directive #end\|invalid preprocessing directive #src\|Recommended relationship\|preprocessor line\|opening the compiled module file' }
+let g:syntastic_quiet_messages = { "regex": 'invalid preprocessing directive #hdr\|invalid preprocessing directive #end\|invalid preprocessing directive #src\|Recommended relationship\|preprocessor line\|opening the compiled module file\|Name in only-list does not exist.   [MAX_NUMBER_OF_CONTEXTS]\|Name in only-list does not exist.   [ICONTEXT]' }
 
 " Vimagit
 autocmd User VimagitEnterCommit startinsert
@@ -118,7 +125,7 @@ set background=light
 " colorscheme delek
 colorscheme fahrenheit
 colorscheme default
-let g:airline_theme='delek'
+" let g:airline_theme='delek'
 
 " Switch syntax highlighting on, when the terminal has colors
 " Also switch on highlighting the last used search pattern.
@@ -219,3 +226,13 @@ nnoremap _ :q<CR>
 
 
 autocmd Filetype python setlocal ts=4 sts=4 sw=4
+
+
+"UltiSnips
+let g:UltiSnipsExpandTrigger="<c-c>"
+let g:UltiSnipsJumpForwardTrigger="<c-g>"
+let g:UltiSnipsJumpBackwardTrigger="<c-/>"
+let g:snips_author="Fabian Nick"
+
+"Latex-Box settings
+let g:LatexBox_viewer="okular"
