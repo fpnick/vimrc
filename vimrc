@@ -219,6 +219,8 @@ nnoremap <F7> :GundoToggle<CR>
 nnoremap S :w<CR>
 " Quit with Shift+-
 nnoremap _ :q<CR>
+" Latexmk
+nnoremap L :Latexmk<CR>
 
 
 autocmd Filetype python setlocal ts=4 sts=4 sw=4
