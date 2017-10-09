@@ -170,11 +170,15 @@ let g:airline_symbols.space = "\ua0"
 let g:airline_theme='dark'
 set t_Co=256
 
+" vim-commentary
+autocmd FileType matlab setlocal commentstring=%\ %s
+
 :set smartcase
 :set ignorecase
 :set noantialias
 
 set encoding=utf-8
+
 
 " Highlight line number of where cursor currently is
 hi CursorLineNr guifg=#050505
