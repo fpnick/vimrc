@@ -195,6 +195,10 @@ set wrap
 set linebreak
 set nolist  " list disables linebreak
 
+" Spellchecker
+set spell spelllang=en_us
+set spell spellfile=mywords.add
+
 "" Remaps
 " Navigation
 nnoremap h h
