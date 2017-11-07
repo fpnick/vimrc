@@ -99,6 +99,8 @@ map <F5> :NERDTreeToggle<CR>
 " Current file in nerdtree
 map <F6> :NERDTreeFind<CR>
 nmap <F8> :TagbarToggle<CR>
+" Show hidden files
+let NERDTreeShowHidden=1
 
 " Command aliases
 cabbrev tp tabprev
