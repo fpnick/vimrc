@@ -127,6 +127,7 @@ set background=light
 " colorscheme delek
 colorscheme fahrenheit
 colorscheme default
+colorscheme pablo
 " let g:airline_theme='delek'
 
 " Switch syntax highlighting on, when the terminal has colors
