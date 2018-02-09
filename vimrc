@@ -124,6 +124,7 @@ set number
 set colorcolumn=80
 set ts=3
 set background=light
+set cursorline
 " colorscheme delek
 colorscheme fahrenheit
 colorscheme default
